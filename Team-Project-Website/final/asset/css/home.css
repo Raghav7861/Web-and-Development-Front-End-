@@ -1,0 +1,201 @@
+/* *{
+  outline: solid 1px hotpink;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fredericka+the+Great&display=swap');
+
+h1, h2{
+  text-align: center;
+  color: white;
+}
+
+h2{
+  padding-top: 10px;
+}
+
+
+body{
+  background-image:  url("../images/star-background.webp");
+  background-repeat: repeat;
+  background-position: 0%;
+  background-size:100% 100%;
+  background-attachment: fixed;
+}
+
+#solar-system{
+  display: flex;
+  flex-direction: row;
+}
+
+#solar-system a{
+  flex-shrink: 1;
+  display: inline-block;
+}
+
+#solar-system img{
+  width:211%;
+}
+
+#solar-system a:hover{
+  transform: scale(1.2);
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+#sun{
+  /* order: 5; */
+  width: 130%;
+  position: relative;
+  left: -3vw;
+}
+
+#mercury{
+  /* order: 6 */
+  width: 15%;
+  position: relative;
+  top: 23vh;
+  left: 8vw;
+}
+
+#venus{
+  /* order: 4 */
+  width: 28%;
+  position: relative;
+  top: 22vh;
+  left: -2vw;
+
+}
+
+#earth{
+  /* order: 7 */
+  width: 50%;
+  position: relative;
+  top: 19vh;
+  left: -5vw;
+
+}
+
+#mars{
+  /* order: 3 */
+  width: 30%;
+  position: relative;
+  top: 23vh;
+  left: -4vw;
+
+}
+
+#jupiter{
+  /* order: 8 */
+  width: 45%;
+  position: relative;
+  top: 25vh;
+  left: -6vw;
+
+}
+
+#saturn{
+  /* order: 2; */
+  width: 80%;
+  position: relative;
+  top: 30vh;
+  left: -10vw;
+
+}
+
+#uranus{
+  /* order: 9; */
+  width: 70%;
+  position: relative;
+  top: 40vh;
+  left: -6vw;
+
+}
+
+#neptune{
+  /* order: 1; */
+  width: 120%;
+  position: relative;
+  top: 40vh;
+  left: -7vw;
+
+}
+
+footer {
+  padding: 20px;
+  padding-top: 0px;
+  margin-left: 0px;
+  /* background-color: rgba(128, 128, 128, .3); */
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 5;
+  color: white ;
+}
+
+footer p{
+  font-family: 'Fredericka the Great', cursive;
+  color: black;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a {
+  color: rgb(77, 77, 131);
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: darkgreen;
+}
+
+footer a:hover {
+  color: green;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+@media (max-width: 800px) {
+  #solar-system{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
+  #solar-system > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  #solar-system img{
+    width: 100vw;
+  }
+
+  #solar-system a{
+    position: static;
+  }
+
+  header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    text-shadow: rgb(64, 64, 66) 1px 0 10px;
+
+  }
+
+  
+}

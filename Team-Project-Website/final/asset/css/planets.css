@@ -1,0 +1,232 @@
+/* *{
+  outline: solid hotpink 1px;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fredericka+the+Great&display=swap');
+h1{
+    text-align: center;
+    color: white ;
+    font-family: 'Bungee Spice', cursive;
+    
+}
+h2{
+    color: white;
+    font-family: 'Bungee Spice', cursive;
+}
+body{
+    background-image:  url("../images/star-background.webp");
+    background-repeat: repeat;
+    background-position: 0%;
+    background-size:100% 100%;
+    background-attachment: fixed;
+
+}
+
+
+img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    z-index: -9;
+}
+
+.page-image{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,.5)50%,rgba(0,0,0,0)66%);
+  height: 110vh;
+  /* object-fit: fill; */
+position: relative;
+top: -5vh;
+}
+
+#pi-div{
+  height: 60vh;
+}
+
+.moon-wrap{
+  position: absolute;
+  top: 20vh;
+  left:5vh;
+  
+}
+
+.moon{
+  z-index: -10;
+  height: 10vh;
+}
+
+.moon:hover{
+  transform: scale(1.2);
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+
+h2{
+  margin-bottom: 10px;
+}
+
+  .container {
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .container p{
+    font-size: 1.2em;
+  }
+  
+  .grid-container > section {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 0px 0;
+    margin-right: 30px;
+    font-size: 30px;
+  }
+  
+  #Description {
+    font-family: 'Fredericka the Great', cursive;
+    padding: 20px;
+    padding-top:10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: white ;
+  }
+  #Atmostphere {
+    font-family: 'Fredericka the Great', cursive;
+    padding: 20px;
+    padding-top: 0px;
+    margin-left: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: white ;
+  }
+  #Geology {
+    font-family: 'Fredericka the Great', cursive;
+    padding: 20px;
+    padding-top: 0px;
+    margin-left: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 3;
+    color: white ;
+  }
+
+  #Fun-Fact{
+    font-family: 'Fredericka the Great', cursive;
+    padding: 20px;
+    padding-top: 0px;
+    margin-left: 30px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: white ;
+  
+  }
+
+  .es-img{
+    padding-top: 10px;
+    border-radius: 2em;
+    filter: drop-shadow(0 0 0.75rem rgb(62, 61, 61));
+    }
+
+  footer {
+    padding: 20px;
+    padding-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    /* background-color: rgba(128, 128, 128, .3); */
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 5;
+    color: white ;
+  }
+
+  footer p{
+    font-family: 'Fredericka the Great', cursive;
+    color: black;
+  }
+
+  footer ul {
+    list-style-type: none;
+  }
+
+  footer a {
+    color: rgb(77, 77, 131);
+    text-decoration: none;
+  }
+
+  footer a:visited {
+    color: darkgreen;
+  }
+
+  footer a:hover {
+    color: green;
+  }
+
+
+  #wormhole{
+    font-family: 'Bungee Spice', cursive;
+
+    padding: 20px;
+    padding-top: 0px;
+    
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 4;
+    height: 20vh;
+    background-image: url("../images/wormhole.webp");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 2em;
+  }
+
+  #wormhole:hover{
+    transform: scale(1.2);
+    transition-duration: .2s;
+    transition-timing-function: ease;
+  }
+
+  #wormhole h3{
+    color: rgb(3, 3, 3) ;
+    text-shadow: rgb(26, 26, 26) 1px 0 10px;
+    font-size: 2.2em;
+    line-height: 20vh;
+    vertical-align: middle;
+  }
+
+  @media (max-width: 800px) {
+    .container{
+      display: block;
+      top: 0vh;
+    }
+
+    .page-image{
+      top:0vh;
+      right: 40px;
+    }
+
+    #wormhole h3{
+      padding-top: 20px;
+      line-height: normal;
+
+    }
+
+
+
+  }
